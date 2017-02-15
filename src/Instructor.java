@@ -3,10 +3,12 @@
  */
 public class Instructor extends Person {
     String title;
+    Course favCourse = new Course("CS2212","Group");
 
     public Instructor(String name, String emailAddress, String title){
         super(name,emailAddress);
         this.title=title;
+        this.favCourse = favCourse;
     }
 
     public String toString(){
